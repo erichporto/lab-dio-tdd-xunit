@@ -9,7 +9,7 @@ namespace TestCalculadora
         [Theory]
         [InlineData (1, 2, 3)]
         [InlineData (4, 5, 9)]
-        public void SomarTest(int a, int b, int resultadoEsperado)
+        public void Quando_DadoDoisNumerosInteiros_Retornar_ValorDaSoma(int a, int b, int resultadoEsperado)
         {
             // Arrange
             int resultado = 0;
@@ -24,7 +24,7 @@ namespace TestCalculadora
         [Theory]
         [InlineData(4, 2, 2)]
         [InlineData(9, 5, 4)]
-        public void SubtrairTest(int a, int b, int resultadoEsperado)
+        public void Quando_DadoDoisNumerosInteiros_Retornar_ValorDaSubtracao(int a, int b, int resultadoEsperado)
         {
             // Arrange
             int resultado = 0;
@@ -39,7 +39,7 @@ namespace TestCalculadora
         [Theory]
         [InlineData(3, 3, 9)]
         [InlineData(4, 2, 8)]
-        public void MultiplicarTest(int a, int b, int resultadoEsperado)
+        public void Quando_DadoDoisNumerosInteiros_Retornar_ValorDaMultiplicacao(int a, int b, int resultadoEsperado)
         {
             // Arrange
             int resultado = 0;
@@ -54,7 +54,7 @@ namespace TestCalculadora
         [Theory]
         [InlineData(2, 2, 1)]
         [InlineData(6, 3, 2)]
-        public void DividirTest(int a, int b, int resultadoEsperado)
+        public void Quando_DadoDoisNumerosInteiros_Retornar_ValorDaDivisaoInteira(int a, int b, int resultadoEsperado)
         {
             // Arrange
             int resultado = 0;
@@ -67,7 +67,7 @@ namespace TestCalculadora
         }
 
         [Fact]
-        public void DividirPorZeroTest()
+        public void Quando_DadoDoisNumerosInteiros_Retornar_ExcecaoAoDividirPorZero()
         {
             // Arrange
             int a = 5;
@@ -80,7 +80,7 @@ namespace TestCalculadora
         }
 
         [Fact]
-        public void HistoricoTest()
+        public void Quando_RealizarOperacaoesNaCalculadora_Retornar_AsTresUltimasOperacoesRegistradas()
         {
             // Arrange
             int a = 6;
